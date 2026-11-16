@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wavelength — Discover & Stream Music</title>
+<meta name="description" content="Wavelength: a premium music streaming platform to discover, play and love music online." />
+
+<!-- Google Fonts: Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="#home" class="logo">
+      <span class="logo-mark">◍</span> Wavelength
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#features" class="nav-link">Features</a></li>
+      <li><a href="#search" class="nav-link">Discover</a></li>
+      <li><a href="#proof" class="nav-link">Community</a></li>
+    </ul>
+
+    <div class="nav-actions" id="navActionsLoggedOut">
+      <button class="btn btn-ghost" id="loginBtn">Log In</button>
+      <button class="btn btn-gradient" id="signupBtn">Sign Up</button>
+    </div>
+
+    <div class="nav-actions nav-actions-user" id="navActionsLoggedIn" hidden>
+      <span class="user-greeting" id="userGreeting">Hi, there</span>
+      <button class="btn btn-ghost" id="logoutBtn">Log Out</button>
+    </div>
+
+    <!-- Mobile menu toggle -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="home">
+    <!-- Animated background sound-wave bars -->
+    <div class="hero-waves" id="heroWaves" aria-hidden="true"></div>
+
+    <div class="hero-content fade-up">
+      <p class="eyebrow">Music, without limits</p>
+      <h1 class="hero-title">
+        Feel every <span class="gradient-text">frequency</span>.<br />
+        Stream the sound of now.
+      </h1>
+      <p class="hero-subtitle">
+        Millions of songs, zero ads, lossless quality. Wavelength learns your taste
+        and curates playlists that actually sound like you.
+      </p>
+      <div class="hero-cta">
+        <button class="btn btn-gradient btn-lg" id="heroStartBtn">Start Listening Free</button>
+        <button class="btn btn-outline btn-lg" id="heroPlansBtn">Explore Plans</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM / SOLUTION SECTION ============ -->
+  <section class="problem-solution fade-up" id="problem">
+    <div class="section-head">
+      <p class="eyebrow">Why switch</p>
+      <h2>Streaming, finally done right</h2>
+    </div>
+
+    <div class="ps-grid">
+      <div class="ps-column ps-problem">
+        <h3 class="ps-heading">The old way</h3>
+        <ul class="ps-list">
+          <li><span class="ps-icon ps-icon-bad">✕</span> Ads interrupting every few songs</li>
+          <li><span class="ps-icon ps-icon-bad">✕</span> Search that never finds the right track</li>
+          <li><span class="ps-icon ps-icon-bad">✕</span> No reliable offline listening</li>
+          <li><span class="ps-icon ps-icon-bad">✕</span> Compressed, lifeless audio quality</li>
+          <li><span class="ps-icon ps-icon-bad">✕</span> Playlists that never evolve with you</li>
+        </ul>
+      </div>
+
+      <div class="ps-column ps-solution">
+        <h3 class="ps-heading">The Wavelength way</h3>
+        <ul class="ps-list">
+          <li><span class="ps-icon ps-icon-good">✓</span> 100% ad-free, uninterrupted listening</li>
+          <li><span class="ps-icon ps-icon-good">✓</span> Smart search powered by lyrics &amp; mood</li>
+          <li><span class="ps-icon ps-icon-good">✓</span> True offline mode, synced across devices</li>
+          <li><span class="ps-icon ps-icon-good">✓</span> Studio-grade HD &amp; lossless audio</li>
+          <li><span class="ps-icon ps-icon-good">✓</span> Playlists that adapt to your every mood</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES / SERVICES SECTION ============ -->
+  <section class="features fade-up" id="features">
+    <div class="section-head">
+      <p class="eyebrow">What you get</p>
+      <h2>Everything your ears deserve</h2>
+    </div>
+
+    <div class="features-grid">
+      <article class="feature-card glass">
+        <div class="feature-icon">♾️</div>
+        <h3>Unlimited Streaming</h3>
+        <p>Play anything, anytime — no caps, no limits, just music on demand.</p>
+      </article>
+
+      <article class="feature-card glass">
+        <div class="feature-icon">⬇️</div>
+        <h3>Offline Mode</h3>
+        <p>Download full albums and playlists to listen anywhere, even offline.</p>
+      </article>
+
+      <article class="feature-card glass">
+        <div class="feature-icon">🧠</div>
+        <h3>Smart Playlists</h3>
+        <p>AI-curated mixes that evolve with your listening habits in real time.</p>
+      </article>
+
+      <article class="feature-card glass">
+        <div class="feature-icon">🎧</div>
+        <h3>HD Audio</h3>
+        <p>Lossless, studio-quality sound so every detail of the mix comes through.</p>
+      </article>
+
+      <article class="feature-card glass">
+        <div class="feature-icon">🔄</div>
+        <h3>Cross-Device Sync</h3>
+        <p>Pick up exactly where you left off — phone, laptop, or car console.</p>
+      </article>
+
+      <article class="feature-card glass">
+        <div class="feature-icon">🎙️</div>
+        <h3>Podcast Support</h3>
+        <p>Your favorite shows live right alongside your music, fully organized.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ MUSIC SEARCH SECTION ============ -->
+  <section class="search-section fade-up" id="search">
+    <div class="section-head">
+      <p class="eyebrow">Try it out</p>
+      <h2>Find your next favorite track</h2>
+    </div>
+
+    <div class="search-box glass" id="searchBox">
+      <span class="search-icon">🔍</span>
+      <input
+        type="text"
+        class="search-input"
+        id="searchInput"
+        placeholder="Search for songs, artists, or albums..."
+        autocomplete="off"
+      />
+      <div class="search-waveform" id="searchWaveform" aria-hidden="true"></div>
+    </div>
+
+    <div class="results-row" id="resultsRow">
+      <!-- Result cards rendered dynamically by script.js from the sample library -->
+    </div>
+    <p class="no-results" id="noResults" hidden>No tracks match "<span id="noResultsQuery"></span>". Try a different name.</p>
+  </section>
+
+  <!-- ============ FEATURED ARTISTS ============ -->
+  <section class="featured-artists fade-up" id="artists">
+    <div class="section-head">
+      <p class="eyebrow">On Wavelength</p>
+      <h2>Artists shaping the sound</h2>
+    </div>
+    <div class="artists-row" id="artistsRow">
+      <!-- Artist portrait cards rendered dynamically by script.js -->
+    </div>
+  </section>
+
+  <!-- ============ SOCIAL PROOF SECTION ============ -->
+  <section class="social-proof fade-up" id="proof">
+    <div class="section-head">
+      <p class="eyebrow">Trusted worldwide</p>
+      <h2>Join millions already listening</h2>
+    </div>
+
+    <div class="counters-grid">
+      <div class="counter-card glass">
+        <p class="counter-number" data-target="10" data-suffix="M+">0</p>
+        <p class="counter-label">Songs Available</p>
+      </div>
+      <div class="counter-card glass">
+        <p class="counter-number" data-target="500" data-suffix="K+">0</p>
+        <p class="counter-label">Active Users</p>
+      </div>
+      <div class="counter-card glass">
+        <p class="counter-number" data-target="150" data-suffix="+">0</p>
+        <p class="counter-label">Countries</p>
+      </div>
+    </div>
+
+    <div class="testimonials-grid" id="testimonialsGrid">
+      <article class="testimonial-card glass" data-name="Ria K." data-role="Designer">
+        <p class="testimonial-text">"Wavelength completely changed how I find new music. The playlists feel handmade."</p>
+        <div class="testimonial-author-row">
+          <span class="avatar-slot" data-seed="201"></span>
+          <p class="testimonial-author">Ria K. <span>Designer</span></p>
+        </div>
+      </article>
+      <article class="testimonial-card glass" data-name="Devon M." data-role="Developer">
+        <p class="testimonial-text">"The offline mode is flawless — I don't think about data anymore."</p>
+        <div class="testimonial-author-row">
+          <span class="avatar-slot" data-seed="202"></span>
+          <p class="testimonial-author">Devon M. <span>Developer</span></p>
+        </div>
+      </article>
+      <article class="testimonial-card glass" data-name="Priya S." data-role="Musician">
+        <p class="testimonial-text">"Finally an app with audio quality that matches my gear."</p>
+        <div class="testimonial-author-row">
+          <span class="avatar-slot" data-seed="203"></span>
+          <p class="testimonial-author">Priya S. <span>Musician</span></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#home" class="logo">
+        <span class="logo-mark">◍</span> Wavelength
+      </a>
+      <p class="footer-tagline">Feel every frequency.</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#">Plans &amp; Pricing</a>
+        <a href="#">For Artists</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Stay in the loop</h4>
+      <p>New releases &amp; features, straight to your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="you@example.com" required aria-label="Email address" />
+        <button type="submit" class="btn btn-gradient">Join</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#" aria-label="Twitter">𝕏</a>
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="YouTube">▶</a>
+      <a href="#" aria-label="Discord">◈</a>
+    </div>
+    <p>&copy; 2026 Wavelength. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ AUTH MODAL (Log In / Sign Up) ============ -->
+<div class="modal-overlay" id="authOverlay" hidden>
+  <div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+    <button class="modal-close" id="authModalClose" aria-label="Close dialog">✕</button>
+    <h3 id="authModalTitle">Log In</h3>
+    <p class="modal-sub" id="authModalSub">Welcome back to Wavelength.</p>
+
+    <form id="authForm" novalidate>
+      <label class="field-label" for="authName" id="authNameWrap" hidden>
+        Name
+        <input type="text" id="authName" placeholder="Your name" autocomplete="name" />
+      </label>
+
+      <label class="field-label" for="authEmail">
+        Email
+        <input type="email" id="authEmail" placeholder="you@example.com" required autocomplete="email" />
+      </label>
+
+      <label class="field-label" for="authPassword">
+        Password
+        <input type="password" id="authPassword" placeholder="••••••••" required minlength="6" autocomplete="current-password" />
+      </label>
+
+      <p class="field-error" id="authError" hidden></p>
+
+      <button type="submit" class="btn btn-gradient btn-lg auth-submit" id="authSubmit">Log In</button>
+    </form>
+
+    <p class="modal-switch">
+      <span id="authSwitchText">Don't have an account?</span>
+      <button type="button" id="authSwitchBtn">Sign up</button>
+    </p>
+  </div>
+</div>
+
+<!-- ============ TOAST NOTIFICATION ============ -->
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="script.js"></script>
+</body>
+</html>
